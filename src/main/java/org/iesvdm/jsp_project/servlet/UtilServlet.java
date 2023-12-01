@@ -4,6 +4,9 @@ import jakarta.servlet.http.HttpServletRequest;
 
 import java.util.Objects;
 import java.util.Optional;
+import org.iesvdm.jsp_project.model.Usuario;
+import org.iesvdm.jsp_project.dao.UsuarioDAO;
+import org.iesvdm.jsp_project.dao.UsuarioDAOImpl;
 
 import static java.lang.Integer.parseInt;
 
@@ -25,7 +28,7 @@ public class UtilServlet {
             contrasena = request.getParameter("contrasena");
 
 
-            return Optional.of(new Usuario(nombre, contrasena);
+            return Optional.of(new Usuario(nombre, contrasena));
 
         } catch (Exception ex) {
             ex.printStackTrace();

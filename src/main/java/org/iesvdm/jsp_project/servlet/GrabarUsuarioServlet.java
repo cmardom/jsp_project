@@ -12,6 +12,9 @@ import org.iesvdm.jsp_project.dao.UsuarioDAOImpl;
 import java.io.IOException;
 import java.util.List;
 import java.util.Optional;
+import org.iesvdm.jsp_project.model.Usuario;
+import org.iesvdm.jsp_project.dao.UsuarioDAO;
+import org.iesvdm.jsp_project.dao.UsuarioDAOImpl;
 
 //lo primero que aparecerá por pantalla será un formulario pidiendo el nombre de usuario y la contraseña.
 //
@@ -47,7 +50,7 @@ public class GrabarUsuarioServlet extends HttpServlet {
 
 
             request.setAttribute("listado", listado);
-            request.setAttribute("newUsuarioID", usuario.getUsuarioID());
+            request.setAttribute("newUsuario", usuario.getNombre());
             
             dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/listadoUsuariosB.jsp");
             
