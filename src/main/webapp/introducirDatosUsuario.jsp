@@ -12,7 +12,7 @@
 </head>
 <body>
     <h2>Introduce tus datos</h2>
-    <form action="ListarUsuariosServlet" method="GET">
+    <form action="IniciarSesionServlet" method="POST">
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" required><br><br>
         <label for="contrasena">Contraseña:</label>

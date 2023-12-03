@@ -82,7 +82,7 @@ public class UsuarioDAOImpl extends AbstractDAOImpl implements UsuarioDAO{
     }
 
     @Override
-    public Optional<Usuario> find(int id) {
+    public Optional<Usuario> find(String nombre) {
 
         Connection conn = null;
         PreparedStatement ps = null;
@@ -93,7 +93,7 @@ public class UsuarioDAOImpl extends AbstractDAOImpl implements UsuarioDAO{
 
             ps = conn.prepareStatement("SELECT * FROM usuario WHERE nombre = ?");
 
-            ps.setInt(1, id);
+            ps.setString(1, nombre);
 
             rs = ps.executeQuery();
 
