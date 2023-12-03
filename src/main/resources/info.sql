@@ -9,3 +9,5 @@ CREATE TABLE IF NOT EXISTS usuario (
                                        nombre VARCHAR(255) UNIQUE,
                                        contrasena VARCHAR(255)
 );
+
+INSERT INTO usuario VALUES ('admin', 'admin');

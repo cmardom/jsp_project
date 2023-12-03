@@ -12,7 +12,7 @@
 </head>
 <body>
   <h1>Control de acceso</h1>
-  <img style="width: 20%" alt="candado" src="https://cdn-icons-png.flaticon.com/512/194/194331.png">
+  <img style="width: 10%" alt="candado" src="https://cdn-icons-png.flaticon.com/512/194/194331.png">
   <p>Acceso permitido a la aplicacion</p>
   <form method="GET" action="introducirAltura.jsp">
     <input type="submit" value="Aceptar">

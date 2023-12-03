@@ -12,6 +12,7 @@ import org.iesvdm.jsp_project.model.Usuario;
 
 import java.io.IOException;
 import java.util.Optional;
+import java.util.List;
 
 @WebServlet (name = "IniciarSesionServlet", value = "/IniciarSesionServlet")
 public class IniciarSesionServlet extends HttpServlet {
@@ -25,9 +26,18 @@ public class IniciarSesionServlet extends HttpServlet {
             Usuario usuario = optionalUsuario.get();
             this.usuarioDAO.find(usuario.getNombre());
 
-            dispatcher = request.getRequestDispatcher("controlAcceso.jsp");
+            if (usuario.getNombre().equals("admin")){
+                dispatcher = request.getRequestDispatcher("controlAccesoAdmin.jsp");
+                List<Usuario> listado = this.usuarioDAO.getAll();
+                request.setAttribute("listado", listado);
+
+            } else {
+                dispatcher = request.getRequestDispatcher("controlAcceso.jsp");
+
+            }
+
+
         } else {
-            System.out.println("sale");
 
             dispatcher = request.getRequestDispatcher("/WEB-INF/introducirDatosUsuario.jsp");
         }

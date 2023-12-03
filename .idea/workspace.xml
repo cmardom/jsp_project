@@ -9,11 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39a578a3-3854-4eae-a0ff-e3aefea3891a" name="Changes" comment="hasta pinta piramide funciona">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/piramidePintada.jsp" afterDir="false" />
+    <list default="true" id="39a578a3-3854-4eae-a0ff-e3aefea3891a" name="Changes" comment="piramide funcionando">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/controlAccesoAdmin.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/gestionUsuarios.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/iesvdm/jsp_project/servlet/IniciarSesionServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/iesvdm/jsp_project/servlet/IniciarSesionServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/introducirAltura.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/introducirAltura.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/info.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/info.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/controlAcceso.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/controlAcceso.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -322,7 +324,7 @@
       <workItem from="1701429407438" duration="4608000" />
       <workItem from="1701538013782" duration="131000" />
       <workItem from="1701538177195" duration="7579000" />
-      <workItem from="1701593619687" duration="6216000" />
+      <workItem from="1701593619687" duration="7939000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -348,7 +350,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701595263445</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="piramide funcionando">
+      <option name="closed" value="true" />
+      <created>1701599913900</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1701599913900</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -358,7 +368,8 @@
     <MESSAGE value="init" />
     <MESSAGE value="bbdd creada" />
     <MESSAGE value="hasta pinta piramide funciona" />
-    <option name="LAST_COMMIT_MESSAGE" value="hasta pinta piramide funciona" />
+    <MESSAGE value="piramide funcionando" />
+    <option name="LAST_COMMIT_MESSAGE" value="piramide funcionando" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
