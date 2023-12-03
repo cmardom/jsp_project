@@ -20,12 +20,10 @@ public class IniciarSesionServlet extends HttpServlet {
     protected void doPost (HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         RequestDispatcher dispatcher = null;
         Optional<Usuario> optionalUsuario = UtilServlet.validarUsuario(request);
-        System.out.println(optionalUsuario);
 
         if (optionalUsuario.isPresent()){
             Usuario usuario = optionalUsuario.get();
             this.usuarioDAO.find(usuario.getNombre());
-            System.out.println("entra");
 
             dispatcher = request.getRequestDispatcher("controlAcceso.jsp");
         } else {

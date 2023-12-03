@@ -12,9 +12,8 @@
 </head>
 <body>
     <h1>Pinta una piramide</h1>
-<%--    action="piramidePintada.jsp"--%>
-    <form method="get" >
-        <input type="number" value="Altura" required>
+    <form method="get" action="piramidePintada.jsp" >
+        <input type="number" value="Altura" name="altura" required>
         <input type="submit" value="Aceptar">
     </form>
 </body>
